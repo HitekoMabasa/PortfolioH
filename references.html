@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>References | Hiteko Mabasa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="references.html" class="active">References</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="references">
+      <video autoplay loop muted playsinline>
+        <source src="assest/aout_back.webm" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="references-overlay">
+        <h1 class="animated-title">References</h1>
+        <div class="reference-box">
+          <h2>Gijima Holdings</h2>
+          <p><strong>Position:</strong> IT Intern |2022-2023</p>
+          <p><strong>Description:</strong> Assisted in technical support, troubleshooting, and maintaining IT systems. Gained hands-on experience with helpdesk and basic system administration.</p>
+          <p><strong>Contact:</strong> Dennise Nyatwa <p>063-441-5521  Dennise.nyatwa@gijima.co.za</p></p>
+        </div>
+
+        <div class="reference-box">
+          <h2>CAPACITI</h2>
+          <p><strong>Position:</strong>IT intern | Current Role</p>
+          <p><strong>Description:</strong> Onboarding phase. Currently building foundational knowledge in specialized IT tasks.</p>
+          <p><strong>Contact:</strong>Kefiloe Mphya | Rokhuda Tshitimbi</p>
+          <p>CLICK ON THE PICTURE FOR CONTACT>>>></p>
+          <div class="picture-space">
+            <a href="https://www.linkedin.com/in/kefiloe-mphye-868ba1146/" target="_blank">
+              <img src="assest/kefiloe.jpg" alt="My mentor" class="mentor-img">
+            </a>
+            <a href="https://www.linkedin.com/in/rokhuda-tshitimbi/" target="_blank">
+              <img src="assest/rokhuda.jpg" alt="Another mentor" class="mentor-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+   <!-- Chatbot Icon -->
+   <div id="chatbot-icon" class="chatbot-icon">
+    <img src="assest/chat.jpg" alt="Chat Icon">
+  </div>
+  
+  <!-- Chatbot Container -->
+  <div id="chatbot" class="chatbot">
+    <div class="chat-header">
+      <button id="close-chat" class="chat-button">X</button>
+      <button id="minimize-chat" class="chat-button">-</button>
+      <span class="chat-title">HitiBot</span>
+    </div>
+    <div id="chatbox" class="chatbox">
+      <div class="message bot-message">
+        <p>Hi, my name is HitiBot. I love assisting people. Please tell me how I can assist you today?</p>
+      </div>
+    </div>
+    <div class="chat-input-container">
+      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+      <button id="send-message" class="chat-button">Send</button>
+    </div>
+  </div>
+
+  <script src="chatbot.js"></script> <!-- External JS for chatbot functionality -->
+
+  <footer>
+    <p>&copy; 2024 Hiteko Mabasa</p>
+  </footer>
+</body>
+</html>

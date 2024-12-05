@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiteko Mabasa | Girl in Tech</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home">
+      <img class="background" src="assest/back.jpg" alt="Background">
+      <div class="profile">
+        <img src="assest/me.jpeg" alt="Hiteko Mabasa" class="profile-pic">
+        <h1 class="animated-text">Hiteko Mabasa</h1>
+        <p class="slogan animated-slogan">Solving Problems, One Line of Code at a Time</p>
+      </div>
+    </section>
+
+    <!-- Chatbot Icon -->
+    <div id="chatbot-icon" class="chatbot-icon">
+      <img src="assest/chat.jpg" alt="Chat Icon">
+    </div>
+    
+    <!-- Chatbot Container -->
+    <div id="chatbot" class="chatbot">
+      <div class="chat-header">
+        <button id="close-chat" class="chat-button">X</button>
+        <button id="minimize-chat" class="chat-button">-</button>
+        <span class="chat-title">HitiBot</span>
+      </div>
+      <div id="chatbox" class="chatbox">
+        <div class="message bot-message">
+          <p>Hi, my name is HitiBot. I love assisting people. Please tell me how I can assist you today?</p>
+        </div>
+      </div>
+      <div class="chat-input-container">
+        <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+        <button id="send-message" class="chat-button">Send</button>
+      </div>
+    </div>
+
+    <script src="chatbot.js"></script> <!-- External JS for chatbot functionality -->
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Hiteko Mabasa</p>
+  </footer>
+</body>
+</html>

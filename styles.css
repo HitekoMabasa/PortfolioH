@@ -1,0 +1,468 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #c58d4c;
+  color: #333;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000107;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  position: relative;
+}
+
+/* Home Page */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  color: rgb(247, 198, 94);
+}
+
+.home .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.home .profile-pic {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 20px;
+}
+
+.animated-text {
+  font-size: 2.5rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.animated-slogan {
+  font-size: 1.5rem;
+  animation: slideIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .animated-text {
+    font-size: 2rem;
+  }
+  .animated-slogan {
+    font-size: 1rem;
+  }
+}
+/* Font Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; /* Minimized font size for cleaner look */
+  line-height: 1.5;
+  background-color: #f8f8f8;
+}
+
+header nav ul li a {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Background Video */
+.about {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; /* Ensures content doesn't overflow the section */
+}
+
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text readability */
+  z-index: 1;
+}
+
+.about video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video fills the entire section */
+  z-index: 0;
+}
+
+.about-overlay {
+  position: relative;
+  z-index: 2; /* Ensures content is above the video */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Optional additional background */
+  border-radius: 10px;
+}
+
+.animated-title {
+  font-size: 4rem;
+  font-family: 'Playfair Display', serif;
+  animation: slideIn 1.5s ease-in-out;
+  color: rgb(204, 156, 54);
+}
+
+.animated-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .animated-title {
+    font-size: 1.8rem;
+  }
+  .animated-text {
+    font-size: 0.8rem;
+  }
+}
+/* Table Styling */
+.details table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures clean borders */
+  margin-top: 20px;
+  color: white; /* Text color inside the table */
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent background for contrast */
+  font-size: 0.9rem;
+}
+
+.details table td {
+  padding: 10px 15px; /* Adds spacing inside the cells */
+  border: 2px solid lightblue; /* Light blue borders */
+  text-align: left;
+  font-family: 'Lato', sans-serif; /* Modern font for a clean look */
+}
+
+.details table td:first-child {
+  font-weight: bold; /* Highlights labels */
+  color: lightblue; /* Light blue color for labels */
+}
+
+.details table tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.2); /* Adds a subtle alternating row effect */
+}
+
+.details h2 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-family: 'Playfair Display', serif;
+  color: rgb(17, 76, 238);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Stylish text shadow */
+}
+/* General Video Background Styling */
+section video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video fills the viewport */
+  z-index: -1; /* Places the video behind the content */
+}
+
+/* Overlay Content Styling */
+.skills-overlay, .references-overlay {
+  position: relative;
+  z-index: 1; /* Ensures the content is above the video */
+  color: #fff; /* Makes the text readable over the video */
+  padding: 50px;
+}
+
+.skills-container, .reference-box {
+  background: rgba(0, 0, 0, 0.7); /* Adds a transparent background for readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.skills-table td {
+  padding: 15px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.skills-table td img, .skills-table td i {
+  display: inline-block; /* Ensures proper alignment with text */
+  width: 50px;
+  
+}
+.picture-space {
+  display: flex; /* Uses Flexbox to place images side by side */
+  gap: 20px; /* Adds space between the images */
+  justify-content: center; /* Centers the images horizontally */
+}
+
+/* Styling the images */
+.mentor-img {
+  width: 100px; /* Resize the images to 100px width */
+  height: 100px; /* Resize the images to 100px height */
+  border-radius: 50%; /* Makes the images circular */
+  object-fit: cover; /* Ensures the images fit within the defined size */
+}
+/* Background Video */
+.contact video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Keep the video behind the content */
+}
+
+/* Contact Section */
+.contact-overlay {
+  position: relative;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for text visibility */
+  color: white;
+  text-align: center;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-form form {
+  display: grid;
+  grid-gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-form label {
+  font-size: 1.2em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Contact Information Styling */
+.contact-details {
+  margin-bottom: 30px;
+}
+
+.contact-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+/* Chatbot Icon Styling */
+.chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #28a745;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.chatbot-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Chatbot Styling */
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 300px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  display: none; /* Initially hidden */
+  z-index: 999;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #006400;
+  border-radius: 10px 10px 0 0;
+}
+
+.chat-header .chat-button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.chat-title {
+  font-weight: bold;
+}
+
+.chatbox {
+  padding: 15px;
+  max-height: 250px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 0 0 10px 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message p {
+  margin: 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.user-message p {
+  background-color: #d1f2d6;
+  text-align: left;
+}
+
+.bot-message p {
+  background-color: #e6f7ff;
+  text-align: left;
+}
+
+.chat-input-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.chat-input-container input {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-input-container button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-input-container button:hover {
+  background-color: #218838;
+}
