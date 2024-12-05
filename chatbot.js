@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const lowercasedMessage = userMessage.toLowerCase();
 
     if (lowercasedMessage.includes('hey') || lowercasedMessage.includes('hi') || chatbox.children.length === 1) {
-      addMessage("Hey, My name is HitiBot, I am here to assist. Kindly tell me what I can assist you with.", 'bot');
+      addMessage("Hey, My name is HitBot, I am here to assist. Kindly tell me what I can assist you with.", 'bot');
     } else if (lowercasedMessage.includes('skill')) {
       addMessage("My tecnical skilss skills include:C++, HTML, JavaScript, CSS, C++, Python, and more.", 'bot');
     } else if (lowercasedMessage.includes('experience')) {
